@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Demo</title>
+</head>
+
+<body>
+    <h1>lets learn javascript! yay!</h1>
+
+    <h2>how to do onclick events</h2> 
+    <a href="https://eastsideprep.org" target="_blank"
+    onclick="alert('warning you are navigating away form this page')">school website</a> <!--this is called a function-->
+
+    <hr>
+    <h2>display a secret message on button click
+        <p id="secret"></p>
+        <button
+        onclick="document.getElementById('secret').innerHTML='suspisious button hehe';
+        getElementById('secret').style.display='block'">
+        reveal!</button>
+        <button onclick="getElementById('secret').style.display='none'">hide secret button</button>
+    </h2>
+</body>
+
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
+</html>
