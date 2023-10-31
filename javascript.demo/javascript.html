@@ -11,29 +11,89 @@
     <a href="https://eastsideprep.org" target="_blank"
     onclick="alert('warning you are navigating away form this page')">school website</a> <!--this is called a function-->
 
-    <hr>
     <h2>display a secret message on button click
-        <p id="secret"></p>
-        <button
-        onclick="document.getElementById('secret').innerHTML='suspisious button hehe';
-        getElementById('secret').style.display='block'">
-        reveal!</button>
-        <button onclick="getElementById('secret').style.display='none'">hide secret button</button>
-    </h2>
+      <p id="secret"></p>
+      <button
+      onclick="reveal()">reveal</button>
+      <button onclick="getElementById('secret').style.display='none'">hide secret button</button>
+  </h2>
 </body>
+    <hr>
 
 
-<h2>HTML Forms</h2>
 
-<form action="/action_page.php">
+<h2>Welcome to Mollys Two Truths and a Lie!</h2>
+
+<form>
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="text" id="fname" name="fname" value="first"><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="text" id="lname" name="lname" value="last"><br><br>
+  <input type="submit" value="Submit" onclick="hello()">
+</form> 
+
+<hr>
+
+<p>Two Truths and a Lie! (Find the lie)</p>
+<form>
+  <input type="radio" id="statement1" name="2truthsnlie" value="lie">
+  <label for="statement1">I fell at my 8h grade graduation for $10</label><br>
+  <input type="radio" id="statement2" name="2truthsnlie" value="truth">
+  <label for="statement2">I broke both my wrists at the same time</label><br>
+  <input type="radio" id="statement3" name="2truthsnlie" value="truth">
+  <label for="statement3">I lived in a historical haunted house</label><br><br>
   <input type="submit" value="Submit">
 </form> 
 <hr>
 
+
+<p>Two Truths and a Lie! (Guess which 2 are <b>TRUE</b>)</p>
+<form>
+  <input type="checkbox" id="statement4" name="2truthsnlie" value="truth">
+  <label for="statement4">I played a woman in a Shakespeare play who gave birth. on stage.</label><br>
+  <input type="checkbox" id="statement5" name="2truthsnlie" value="truth">
+  <label for="statement5">I almost had my pinky finger amputated</label><br>
+  <input type="checkbox" id="statement6" name="2truthsnlie" value="lie">
+  <label for="statement6">I had a pet banana slug that i lost in a river</label><br><br>
+  <button type="submit" onclick="checktruth()">submit</button>
+</form>
+
+<script>
+  function reveal() {
+    document.getElementById('secret').innerHTML='suspisious button hehe';
+      getElementById('secret').style.display='block'
+  }
+
+  function hello() {
+    let name= document.getElementById('fname').value;
+    alert("Hello, " + name);
+  }
+
+  function checktruth() {
+  let answertag= document.getElementById('answer');
+  
+    if (document.getElementById('statement1').checked) {
+      answertag.innerHTML= 'lie';
+      answertag.style.color = "red";
+      answertag.style.display= 'block';
+    }
+
+      if (document.getElementById('statement2').checked) {
+      alert("that was a truth");
+      answertag.innerHTML= 'truth';
+      answertag.style.color = "green";
+      answertag.style.display= 'block';
+    }
+
+    if (document.getElementById('statement3').checked) {
+      alert("that was a truth");
+      answertag.innerHTML= 'truth';
+      answertag.style.color = "green";
+      answertag.style.display= 'block';
+    }
+  }
+  
+</script>
 
 
 </html>
