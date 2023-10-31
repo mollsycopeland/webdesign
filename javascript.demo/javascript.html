@@ -42,10 +42,10 @@
   <label for="statement2">I broke both my wrists at the same time</label><br>
   <input type="radio" id="statement3" name="2truthsnlie" value="truth">
   <label for="statement3">I lived in a historical haunted house</label><br><br>
-  <input type="submit" value="Submit">
+  <input type="button" value="Submit" onclick="checktruth()">
 </form> 
+<P id="answer"></P>
 <hr>
-
 
 <p>Two Truths and a Lie! (Guess which 2 are <b>TRUE</b>)</p>
 <form>
@@ -55,8 +55,9 @@
   <label for="statement5">I almost had my pinky finger amputated</label><br>
   <input type="checkbox" id="statement6" name="2truthsnlie" value="lie">
   <label for="statement6">I had a pet banana slug that i lost in a river</label><br><br>
-  <button type="submit" onclick="checktruth()">submit</button>
+  <input type="button" value="submit" onclick="checktruth()"></input>
 </form>
+<P id="answer"></P>
 
 <script>
   function reveal() {
@@ -79,14 +80,12 @@
     }
 
       if (document.getElementById('statement2').checked) {
-      alert("that was a truth");
       answertag.innerHTML= 'truth';
       answertag.style.color = "green";
       answertag.style.display= 'block';
     }
 
     if (document.getElementById('statement3').checked) {
-      alert("that was a truth");
       answertag.innerHTML= 'truth';
       answertag.style.color = "green";
       answertag.style.display= 'block';
