@@ -6,33 +6,79 @@
     <title>Homepage</title>
 </head>
 
-<body>
+    </body>
+    <header>
+        <div class="content">
+          <hgroup>
+            <h1>Local Yolks</h1>
+            <i>"Selling local yolks to local folks"</i>
+          </hgroup>
+        </div>
+        <div class="overlay"></div>
+      </header>
 
-<div class="topnav">
-    <div class="container">
-        <!-- Navbar logo -->
-        <a class="navbar-brand" href="https://www.patrickcopeland.org/eggs/girls">
-          <img
-            src="images/Screenshot 2023-11-02 105724.png"
-            height="60"
-            alt=" Yolks Logo"
-            loading="lazy"
-            style="margin-top: -5px;">
-        </a>
-      </div>
-      <!--Navbar links-->
-  <a href="eggs.html">The Eggs</a>
+      
+<style>
+    ul {
+      list-style-type: none;
+      margin: 5;
+      padding: 3%;
+      width: 300px;
+      background-color: rgb(192, 127, 89);
+      text-align: center;
+      align-items: right;
+    }
+    
+    li a {
+      display: block;
+      color: #ffffff;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+    
+    /* Change the link color on hover */
+    li a:hover {
+      background-color: rgb(215,165,97);
+      color: white;
+      
+    }
 
-  <a href="contact.html">Contact Us</a>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; align-items: right}
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right';
+          gap: 10px;
+          background-color: rgb(225,197,180);
+          padding-left: 40%;
+        }
+        
+        .grid-container > div {
+          text-align: center;
+          padding: 30px 0;
+          font-size: 30px;
+        }
 
-  <a href="order.html">Order Now</a>
+    .ridge{border-style: ridge;}
 
-  <a href="about.html">About Us</a>
+        </style>
+        <body>
+        <div class="grid-container">
+            <div class="item4"><ul>
+                <li><a href="chickens.html" class="ridge">Chickens</a></li>
+                <li><a href="contact.html" class="ridge">Contact</a></li>
+                <li><a href="eggs.html" class="ridge">Eggs</a></li>
+                <li><a href="about.html" class="ridge">About Us</a></li>
+                <li><a href="order.html" class="ridge">Order Now!</a></li>
+              </ul>
+            </div>
 
-  <a href="chickens.html">Chickens</a>
-</div>
-</body>
-
-
-
+        </body>
+          
 </html>
+
