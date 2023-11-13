@@ -3,7 +3,7 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;;
 }
 
 .topnav a {
@@ -17,7 +17,7 @@
 
 
 body {
-  background-color:  rgb(225,197,180);
+  background-color:  rgb(245, 239, 235);
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
