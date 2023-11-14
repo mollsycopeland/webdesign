@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
 </head>
 
-    </body>
-    <header>
-        <div class="content">
-          <hgroup>
-            <h1>Local Yolks</h1>
-            <i>"Selling local yolks to local folks"</i>
-          </hgroup>
-        </div>
-        <div class="overlay"></div>
-      </header>
+<body>
+  <header>
+    <div class="content">
+      <hgroup>
+        <h1>Local Yolks</h1>
+        <i>"Selling local yolks to local folks"</i>
+      </hgroup>
+    </div>
+    <div class="overlay"></div>
+  </header>
+</body>
 
-      
 <style>
-    ul {
-      list-style-type: none;
-      margin: 5;
-      padding: 3%;
-      width: 300px;
-      background-color: rgb(192, 127, 89);
-      text-align: center;
-      align-items: right;
-    }
+  ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 3%;
+    width: 300px;
+    background-color: rgb(192, 127, 89);
+    text-align: center;
+    align-items: right;
+  }
+
+  li a {
+    display: block;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  
+  li a:hover {
+    background-color: #d7a561;
+    color: white;
+
+  }
+
+  .item1 {
+    grid-area: header;
+  }
+
+  .item2 {
+    grid-area: menu;
+  }
+
+  .item3 {
+    grid-area: main;
+  }
+
+  .item4 {
+    grid-area: right;
+    align-items: right
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right';
+    gap: 10px;
+    background-color: rgb(225, 197, 180);
+    padding-left: 40%;
+  }
+
+  .grid-container>div {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+  }
+
+  .ridge {
+    border-style: ridge;
+  }
+</style>
+
+<body>
+  <div class="grid-container">
+    <div class="item4">
+      <ul>
+        <li><a href="chickens.html" class="ridge">Chickens</a></li>
+        <li><a href="contact.html" class="ridge">Contact</a></li>
+        <li><a href="about.html" class="ridge">About Us</a></li>
+        <li><a href="order.html" class="ridge">Order Now!</a></li>
+      </ul>
+    </div>
+
+</body>
+
+<footer id="main-footer" class="add-padding border-top-color2">
     
-    li a {
-      display: block;
-      color: #ffffff;
-      padding: 15px 20px;
-      text-decoration: none;
-    }
-    
-    /* Change the link color on hover */
-    li a:hover {
-      background-color: #d7a561;
-      color: white;
-      
-    }
-
-        .item1 { grid-area: header; }
-        .item2 { grid-area: menu; }
-        .item3 { grid-area: main; }
-        .item4 { grid-area: right; align-items: right}
-        
-        .grid-container {
-          display: grid;
-          grid-template-areas:
-            'header header header header header header'
-            'menu main main main right right';
-          gap: 10px;
-          background-color: rgb(225,197,180);
-          padding-left: 40%;
-        }
-        
-        .grid-container > div {
-          text-align: center;
-          padding: 30px 0;
-          font-size: 30px;
-        }
-
-    .ridge{border-style: ridge;}
-
-        </style>
-        <body>
-        <div class="grid-container">
-            <div class="item4"><ul>
-                <li><a href="chickens.html" class="ridge">Chickens</a></li>
-                <li><a href="contact.html" class="ridge">Contact</a></li>
-                <li><a href="eggs.html" class="ridge">Eggs</a></li>
-                <li><a href="about.html" class="ridge">About Us</a></li>
-                <li><a href="order.html" class="ridge">Order Now!</a></li>
-              </ul>
-            </div>
-
-
+  <div class="container">
+  
+    <p class="text-center">&copy; Molly Copeland</p>
+  
+  </div>
+  
+</footer>
 </html>
-
