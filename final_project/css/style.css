@@ -1,54 +1,11 @@
 
-.topnav {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  background-color: #ffffff;;
-}
-
-.topnav a {
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-
-body {
-  background-color:  rgb(245, 239, 235);
-}
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-
-
 body {
   font-size: 1.3em;
 }
-
-header {
-  height: 30%;
-  position: relative;
-  overflow: hidden;
-  background: url() center no-repeat;
-  background-size: 100%;
-  padding: 2px;
+body {
+  background-color:  rgb(244, 241, 239);
 }
 
-header h1, header h2 {
-  margin: 0;
-}
-header h2 {
-  text-transform: uppercase;
-  margin-top: -.5em;
-}
 header hgroup {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -72,4 +29,48 @@ img{
 }
 
  
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: auto;
+}
 
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:   #9c9c9c;
+  text-decoration: none;
+  font-size: 18px;
+  width: 16%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; 
+}
+
+
+
+.navbar a.active {
+  background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.pic-list {
+  float: left;
+  Display: Inline-Block
+}
+
+h5 {
+color:rgb(74, 74, 170);font-size: large; text-align: center; font-family: 'Times New Roman', Times, serif;
+}
+.pic-list2 {
+float: right;
+Display: Inline-Block
+}

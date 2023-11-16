@@ -5,42 +5,218 @@
     <title>Order Now!</title>
 </head>
 
-<body>
-
-    <div class="topnav">
-        <div class="container">
-            <!-- Navbar logo -->
-            <a class="navbar-brand" href="https://www.patrickcopeland.org/eggs/girls">
-              <img
-                src="images/Screenshot 2023-11-02 105724.png"
-                height="70"
-                alt=" Yolks Logo"
-                loading="lazy"
-                style="margin-top: -5px;">
-            </a>
-          </div>
-          
-    <div><!--Navbar links-->
-      <a href="index.html">Homepage</a>
+<!-- The navigation menu -->
+<div class="navbar">
+  <div class="topnav">
+    <div class="container">
+        <!-- Navbar logo -->
+        <a class="navbar-brand" href="https://www.patrickcopeland.org/eggs/girls">
+          <img
+            src="images/Screenshot 2023-11-02 105724.png"
+            height="65"
+            alt=" Yolks Logo"
+            loading="lazy"
+            style="margin-top: -5px;">
+        </a>
+      </div>
+  <a href="index.html">Home</a>
+  <a href="chickens.html">Chickens</a>
+  <a href="about.html">About us</a>
+  <a href="contact.html">Contact</a>
+</div>
+</div>
+  <style>
+    th{
+    text-align:center;
     
-      <a href="contact.html">Contact Us</a>
+
+}
+
+.bbody{
+font-size: 20pt;
+
+}
+
+.bbutton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .ddiv {
+    text-align: center;
+    border-style: solid;
+    margin-left: 270px;
+    width:60%
+}
+#alignment{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+td{
+  text-align:center;
+}
+
+
+  </style>
+
+<br>
+<br>
+<body >  
+  <div class="ddiv"> 
+  <h2>=========Price list=========</h2> 
+</div>
+<br>
+<img  style="float: right; padding-right: 10%; padding-top: 2%; "  width="400" src="images/Screenshot 2023-11-05 193206.png" alt="egg">
+<br>
+<table width="50%" id="alignment" style="padding-left: 25%;" > 
+  <tr>  
+  <th>Food Item</th> 
+  <th></th>
+  <th>Price(USD)</th>
+  </tr> 
+  <tr>
+  <td style="color: #BB9D57;">*egg1*</td> 
+  <td> - </td>
+  <td style="color:#BB9D57 ;">7000.00</td> 
+  </tr> 
+  <tr>
+  <td style="color: #C5A272;">*egg2*</td>
+  <td> - </td> 
+  <td style="color: #C5A272;">5000.00</td> 
+  </tr>
+  <tr> 
+  <td style="color: #D5B177;">*egg3*</td>
+  <td> - </td>  
+  <td style="color: #D5B177;">3000.00</td>
+  </tr> 
+  <tr>  
+  <td style="color: #D5B177;">*egg4*</td>
+  <td> - </td> 
+  <td style="color: #D5B177;">2000.00</td> 
+  </tr>  
+  <tr>
+  <td style="color: #A16017;">*egg5*</td>
+  <td> - </td> 
+  <td style="color: #A16017;">1000.00</td>
+  </tr>
+  </table>
+  <br>
+
+  <br>
+
+  <h style="padding-left: 34%;">Food - Order Form</h1>
+    <table style="background-color: #AA5804;margin-left: 380px;">  <tr>
+    <td>Branch : </td>
+    <td> 
+    <select> 
+    <option>--Select Item--</option>
+    <option>Email</option>
+    <option>Messages</option> 
+    </select>
+    </td> 
+    </tr>
+    <tr>
+    <td>Username:</td>
+    <td>
+    <input type="text" >
+    </td>
+    </tr>
+    <tr><td>Mobile: </td>
+    <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+    </table>
+    <br>
+    <form name="tblform" >
+      <table width="80%"  id="alignment" >
+      <tr>
+      <th>Food Item</th>
+      <th> </th>
+      <th>Quantity</th>
+      <th>Price</th> 
+      </tr>
+      <tr> 
+      <td>Item 1:</td> 
+      <td>
+      <select id="item1">
+      <option value="1">--Select Item--</option> 
+      <option value="egg1">egg1</option> 
+      <option value="egg2">egg2</option> 
+      <option value="egg3">egg3</option> 
+      <option value="egg4">egg4</option> 
+      <option value="egg5">egg5</option> 
+      </select>
+      </td> 
+      <td><input type="number" value="0" id="q1"></td>
+      <td><input type="text" id="p1"></td>
+      </tr>   
+      <tr>
+      <td>Item 2:</td>
+      <td>
+      <select id="item2"> 
+      <option value="1">--Select Item--</option> 
+      <option value="Chicken pizza">egg1</option> 
+      <option value="egg1">egg1</option> 
+      <option value="egg2">egg2</option> 
+      <option value="egg3">egg3</option> 
+      <option value="egg4">egg4</option> 
+      <option value="egg5">egg5</option>   
+      </select>
+      </td>
+      <td><input  type="number" value="0" id="q2"></td>  
+      <td><input type="text"  id="p2"></td>  
+      </tr> 
+      <tr>
+      <td>Item 3:</td>
+      <td><select id="item3">  
+      <option value="1">--Select Item--</option> 
+      <option value="Chicken pizza">egg1</option>  
+      <option value="egg1">egg1</option> 
+      <option value="egg2">egg2</option> 
+      <option value="egg3">egg3</option> 
+      <option value="egg4">egg4</option> 
+      <option value="egg5">egg5</option>  
+      </select>
+      </td>
+      <td><input type="number" value="0" id="q3"></td>
+      <td><input type="text"  id="p3"></td> 
+      </tr> 
+      <tr>
+      <td>Item 4:</td>
+      <td><select id="item4">   
+      <option value="1">--Select Item--</option> 
+      <option value="egg1">egg1</option> 
+      <option value="egg2">egg2</option> 
+      <option value="egg3">egg3</option> 
+      <option value="egg4">egg4</option> 
+      <option value="egg5">egg5</option>  
+      </select>
+      </td>
+      <td><input type="number" value="0" id="q4"></td>
+      <td><input type="text"  id="p4"></td> 
+      </tr>    
+      <tr>
+      <td></td> 
+      <td></td> 
+      <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+      <td><input type="reset" class="button" value="Clear"></td>
+      </tr>
+      </table>
+      </form>
+      <script>function checkmob(){
+        var str=document.getElementById("mblenmb").value;
+    var ptr=/^07[072568][0-9]{7}$/;
     
-      <a href="about.html">About Us</a>
+    var chck=ptr.test(str);
     
-      <a href="chickens.html">Chickens</a>
-    </div>
-        </body>
-
-
-
-
-        <footer id="main-footer" class="add-padding border-top-color2">
-    
-          <div class="container">
-          
-            <p class="text-center">&copy; Molly Copeland</p>
-          
-          </div>
-          
-        </footer>
+    if(!chck)
+    alert("Moblie Number is Incorrect");
+  }</script>
+     
 </html>
